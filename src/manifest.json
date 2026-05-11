@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "chromium:manifest_version": 3,
+  "firefox:manifest_version": 3,
+  "version": "1.0.0",
+  "name": "SBB for Komoot",
+  "description": "An SBB/CFF/FFS extension for Komoot, to easily plan your train journey to the start of your next hike.",
+  "icons": {
+    "16": "images/favicons/favicon-16x16.png",
+    "32": "images/favicons/favicon-32x32.png",
+    "48": "images/favicons/favicon-48x48.png",
+    "128": "images/favicons/favicon-128x128.png"
+  },
+  "chromium:action": {
+    "default_icon": {
+      "16": "images/favicons/favicon-16x16.png",
+      "32": "images/favicons/favicon-32x32.png",
+      "48": "images/favicons/favicon-48x48.png",
+      "128": "images/favicons/favicon-128x128.png"
+    },
+    "default_title": "SBB for Komoot"
+  },
+  "firefox:action": {
+    "default_icon": {
+      "16": "images/favicons/favicon-16x16.png",
+      "32": "images/favicons/favicon-32x32.png",
+      "48": "images/favicons/favicon-48x48.png",
+      "128": "images/favicons/favicon-128x128.png"
+    },
+    "default_title": "SBB for Komoot"
+  },
+  "chromium:side_panel": {
+    "default_path": "sidebar/index.html",
+    "default_title": "SBB for Komoot"
+  },
+  "firefox:sidebar_action": {
+    "default_panel": "sidebar/index.html",
+    "default_title": "SBB for Komoot",
+    "default_icon": {
+      "16": "images/favicons/favicon-16x16.png",
+      "32": "images/favicons/favicon-32x32.png",
+      "48": "images/favicons/favicon-48x48.png",
+      "128": "images/favicons/favicon-128x128.png"
+    }
+  },
+  "chromium:permissions": [
+    "sidePanel",
+    "tabs",
+    "storage"
+  ],
+  "firefox:permissions": [
+    "tabs",
+    "storage"
+  ],
+  "chromium:host_permissions": [
+    "https://transport.opendata.ch/*",
+    "https://www.komoot.com/*",
+    "https://komoot.com/*"
+  ],
+  "firefox:host_permissions": [
+    "https://transport.opendata.ch/*",
+    "https://www.komoot.com/*",
+    "https://komoot.com/*"
+  ],
+  "firefox:browser_specific_settings": {
+    "gecko": {
+      "id": "sbb-for-komoot@extension",
+      "strict_min_version": "109.0"
+    }
+  },
+  "background": {
+    "chromium:service_worker": "background.ts",
+    "firefox:scripts": [
+      "background.ts"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.komoot.com/*",
+        "https://komoot.com/*"
+      ],
+      "js": [
+        "content/scripts.ts"
+      ]
+    }
+  ],
+  "author": "Aloha Churchill & Benjamin Lozes"
+}
