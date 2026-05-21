@@ -4,3 +4,5 @@
 
 ![screenshot](./public/image.png)
 
+> [!IMPORTANT]
+> We are looking for beta testers, check out [this issue](https://github.com/sbb-for-komoot/sbb-for-komoot/issues/1) if you are interested.
