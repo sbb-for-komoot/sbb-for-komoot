@@ -18,9 +18,19 @@ function detectBrowserLocale(): SupportedLocale {
   return (SUPPORTED_LOCALES.includes(lang as SupportedLocale) ? lang : 'en') as SupportedLocale
 }
 
+const messageCompiler = (message: unknown) => {
+  const source = typeof message === 'string' ? message : String(message ?? '')
+  return (ctx: {named: (key: string) => unknown}) =>
+    source.replace(/\{(\w+)\}/g, (_, key) => {
+      const value = ctx.named(key)
+      return value == null ? '' : String(value)
+    })
+}
+
 export const i18n = createI18n({
   legacy: false,
   locale: detectBrowserLocale(),
   fallbackLocale: 'en',
   messages: {en, fr, de, it},
+  messageCompiler: messageCompiler as never,
 })
