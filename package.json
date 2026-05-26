@@ -1,14 +1,14 @@
 {
   "private": true,
   "name": "sbb_for_komoot",
-  "description": "Vue.js-based extension with sidebar panel",
-  "version": "1.0.0",
+  "description": "A browser extension that enhances the user experience on Komoot by providing realtime routing via SBB/CFF/FFS journeys.",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "author": {
-    "name": "Your Name",
-    "email": "your@email.com",
-    "url": "https://yourwebsite.com"
+    "name": "SBB for Komoot",
+    "email": "sbbforkomoot@gmail.com",
+    "url": "https://github.com/sbb-for-komoot/sbb-for-komoot"
   },
   "dependencies": {
     "vue": "^3.5.34",
