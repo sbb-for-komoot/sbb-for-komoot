@@ -2,8 +2,9 @@
   "$schema": "https://json.schemastore.org/chrome-manifest.json",
   "chromium:manifest_version": 3,
   "firefox:manifest_version": 3,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "SBB for Komoot",
+  "homepage_url": "https://github.com/sbb-for-komoot/sbb-for-komoot",
   "description": "An SBB/CFF/FFS extension for Komoot, to easily plan your train journey to the start of your next hike.",
   "icons": {
     "16": "images/favicons/favicon-16x16.png",
