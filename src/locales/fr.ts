@@ -26,6 +26,7 @@ export default {
   infoBody3: "Cette extension fonctionne <strong>entièrement sur votre appareil</strong>. Aucune donnée personnelle n'est collectée ou envoyée à des tiers \u2014 les seules requêtes externes sont adressées aux <strong>CFF/SBB/FFS</strong> et à <strong>Komoot</strong> pour récupérer les horaires et les itinéraires.",
   infoBody4: 'Le code source est open-source et disponible sur <a href="https://github.com/sbb-for-komoot/sbb-for-komoot" target="_blank" rel="noopener">github.com/sbb-for-komoot/sbb-for-komoot</a>.',
   infoFooter: 'Utilisation à vos propres risques. Vérifiez toujours les connexions sur le <a href="https://www.sbb.ch" target="_blank" rel="noopener">site officiel des SBB</a>.',
+  infoBugReport: 'Vous avez trouvé un bug ? <a href="https://github.com/sbb-for-komoot/sbb-for-komoot/issues" target="_blank" rel="noopener">Signalez-le sur GitHub</a>.',
 
   // Connection list
   loading: 'Chargement\u2026',

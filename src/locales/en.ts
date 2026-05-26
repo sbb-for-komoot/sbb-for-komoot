@@ -26,6 +26,7 @@ export default {
   infoBody3: 'This extension runs <strong>entirely on your device</strong>. No personal data is collected or sent to any third party \u2014 the only external requests made are to <strong>SBB/CFF/FFS</strong> and <strong>Komoot</strong> to fetch timetable and route information.',
   infoBody4: 'The source code is open-source and available at <a href="https://github.com/sbb-for-komoot/sbb-for-komoot" target="_blank" rel="noopener">github.com/sbb-for-komoot/sbb-for-komoot</a>.',
   infoFooter: 'Use at your own risk. Always verify connections on the official <a href="https://www.sbb.ch" target="_blank" rel="noopener">SBB website</a>.',
+  infoBugReport: 'Found a bug? <a href="https://github.com/sbb-for-komoot/sbb-for-komoot/issues" target="_blank" rel="noopener">Report it on GitHub</a>.',
 
   // Connection list
   loading: 'Loading\u2026',

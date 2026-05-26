@@ -26,6 +26,7 @@ export default {
   infoBody3: 'Diese Erweiterung läuft <strong>vollständig auf Ihrem Gerät</strong>. Es werden keine persönlichen Daten gesammelt oder an Dritte weitergegeben \u2014 die einzigen externen Anfragen gehen an <strong>SBB/CFF/FFS</strong> und <strong>Komoot</strong>, um Fahrplan- und Routeninformationen abzurufen.',
   infoBody4: 'Der Quellcode ist open-source und verfügbar auf <a href="https://github.com/sbb-for-komoot/sbb-for-komoot" target="_blank" rel="noopener">github.com/sbb-for-komoot/sbb-for-komoot</a>.',
   infoFooter: 'Nutzung auf eigenes Risiko. Überprüfen Sie Verbindungen stets auf der <a href="https://www.sbb.ch" target="_blank" rel="noopener">offiziellen SBB-Website</a>.',
+  infoBugReport: 'Einen Fehler gefunden? <a href="https://github.com/sbb-for-komoot/sbb-for-komoot/issues" target="_blank" rel="noopener">Melden Sie ihn auf GitHub</a>.',
 
   // Connection list
   loading: 'Laden\u2026',

@@ -130,6 +130,7 @@
             <span v-html="t('infoBody4')" />
           </p>
           <p class="info-popup-footer" v-html="t('infoFooter')" />
+          <p class="info-popup-footer" v-html="t('infoBugReport')" />
         </div>
       </div>
     </Transition>
