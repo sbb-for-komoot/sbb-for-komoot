@@ -6,7 +6,7 @@ export default defineComponent({
   name: 'ContentApp',
   setup() {
     const openSidebar = () => {
-        browser.runtime.sendMessage({type: 'openSidebar'})
+        chrome.runtime.sendMessage({type: 'openSidebar'})
     }
     return {openSidebar, sbbIcon}
   }

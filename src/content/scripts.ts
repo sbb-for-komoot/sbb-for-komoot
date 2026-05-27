@@ -2,12 +2,21 @@ import {createApp} from 'vue'
 import ContentApp from './ContentApp.vue'
 import './styles.css'
 
+const isFirefoxLike =
+  import.meta.env.EXTENSION_PUBLIC_BROWSER === 'firefox' ||
+  import.meta.env.EXTENSION_PUBLIC_BROWSER === 'gecko-based'
+
 /**
  * Extension.js content_script entrypoint. The framework calls this on
  * injection and calls the returned function on HMR/teardown to clean up.
  * Do not invoke it yourself.
  */
 export default function initial() {
+  // The in-page button only works on Chromium-based browsers: Firefox MV3
+  // strips the user-gesture context from runtime messages, so the background
+  // worker can't open the sidebar in response. Skip injection there.
+  if (isFirefoxLike) return () => {}
+
   console.log('[From the page context] Hello from content_scripts!')
   const rootDiv = document.createElement('div')
   rootDiv.setAttribute('data-extension-root', 'true')
