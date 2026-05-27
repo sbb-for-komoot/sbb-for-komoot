@@ -10,3 +10,13 @@
 
 > [!IMPORTANT]
 > We are looking for beta testers, check out [this issue](https://github.com/sbb-for-komoot/sbb-for-komoot/issues/1) if you are interested.
+
+## Roadmap
+
+Here is what's coming next for this extension:
+
+- ◐ **Beta testing** — gathering feedback from early users to polish the experience.
+- ○ **Richer connection details** — display more useful information such as train occupancy, platform numbers, and delays.
+- ○ **Flexible destinations** — let users pick any destination, not only the starting point of the hike.
+- ○ **Moving from opendata.ch to SBB APIs ?** — this one is tricky, opendata.ch APIs are stable, SBB's are not but they're much faster.
+- ○ **[Suggest a feature](https://github.com/sbb-for-komoot/sbb-for-komoot/issues)** — got an idea? Open an issue and let us know!
